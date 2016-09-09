@@ -4,5 +4,149 @@
 
 body {
 	width: 80%;
-	background-color: #ebfafa;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+header {
+	background-color: #C0C0C0;
+	height: 100px;
+	border-radius: 20px;
+}
+header h1 {
+	float: left;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 10px;
+	width: 70%;
+}
+.main {
+	display: table;
+	-webkit-column-count: 2; /*Chrome, Safari, Opera?????*/
+	-moz-column-count: 2; /*Firefox?????*/
+	column-count: 2; /*cantidad de columnas*/
+	column-gap: 40px; /*espacio entre columnas*/
+	-webkit-column-gap: 40px; /*Firefox?????*/
+	margin-top: 10px;
+}
+.menu {
+	display: table-cell;
+	background-color: #DDDDDD;
+	border-radius: 15px;
+	width: 150px;
+
+
+}
+.menu ul {
+	list-style: none;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+
+
+}
+.menu ul li {
+	width: 140px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #C8C8C8;
+	border-radius: 10px;
+	margin-top: 5px;
+	
+}
+.menu ul li a {	
+	text-decoration: none;
+	color: black;	
+}
+.contenido {
+	display: table-cell;
+	background-color: #DDDDDD;
+	border-radius: 15px;
+	padding-left: 10px;
+
+}
+.horizontales {
+	
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.presentacion {
+	background-color: #C8C8C8;
+	border-radius: 10px;
+	margin-top: 15px;
+	padding: 15px;
+}
+.proceso {
+	background-color: #C8C8C8;
+	border-radius: 10px;
+	margin-top: 15px;
+	padding: 15px;
+}
+.titulo {
+	text-align: center;
+	padding-bottom: 15px;
+}
+.texto {
+	margin: 10px;
+}
+.foto img {
+	display: block;
+	max-width: 360px; /*Maximo ancho*/
+	max-height: 300px; /*Maximo alto*/
+	width: 50%;
+	height: 60%;
+	padding: 2px;
+	border: double;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.escalera img {
+	display: block;
+	max-width: 360px; /*Maximo ancho*/
+	max-height: 300px; /*Maximo alto*/
+	width: 50%;
+	height: 60%;
+	padding: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.laboral img {
+	display: block;
+	max-width: 360px; /*Maximo ancho*/
+	max-height: 300px; /*Maximo alto*/
+	width: 50%;
+	height: 60%;
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.contacto img {
+	display: block;
+	max-width: 360px; /*Maximo ancho*/
+	max-height: 300px; /*Maximo alto*/
+	width: 50%;
+	height: 60%;
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.diseno img {
+	max-width: 120px; /*Maximo ancho*/
+	max-height: 100px; /*Maximo alto*/
+	float: right;
+	width: 25%;
+	margin-right: 40px;
+	margin-top: 25px;
+}
+.cuadros article {
+	display: inline-table;
+	width: 40%; /*Ancho article*/
+	height: 420px;
+	margin-left: 5%;/*Magen izquierda*/
+	margin-bottom: 10px; /*Margen inferior*/
+	margin-top: 10px; /*Margen superior*/
+	background-color: #C8C8C8;
+	border-radius: 10px;
 }
