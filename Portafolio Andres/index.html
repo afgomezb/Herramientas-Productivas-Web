@@ -14,7 +14,10 @@
 	</header>
 	<section class="main">
 		<div class="menu">
-			<ul>
+			<ul id="myTopnav" class="top-menu">
+				<li class="icon">
+					<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+				</li>
 				<li>
 					<a href="#presentacion">Presentación</a>
 				</li>
@@ -133,10 +136,23 @@
 				<a href="https://www.facebook.com/AndresFelipeGomezBasbosa">Facebook</a>
 			</li>
 			<li>
-				<a href="">Instagram</a>
+				-
+			</li>
+			<li>
+				<a href="https://www.instagram.com/">Instagram</a>
 			</li>
 		</ul>
 	</footer>
+	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "top-menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "top-menu";
+    }
+}
+</script>
 
 </body>
 </html>

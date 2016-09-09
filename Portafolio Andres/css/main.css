@@ -1,5 +1,6 @@
 *{
 	margin: 0 auto;
+	font: sans-serif;
 }
 
 body {
@@ -75,7 +76,7 @@ header h1 {
 .presentacion {
 	background-color: #C8C8C8;
 	border-radius: 10px;
-	margin-top: 15px;
+	margin-top: 20px;
 	padding: 15px;
 }
 .proceso {
@@ -87,6 +88,7 @@ header h1 {
 .titulo {
 	text-align: center;
 	padding-bottom: 15px;
+	margin-top: 15px;
 }
 .texto {
 	margin: 10px;
@@ -108,9 +110,9 @@ header h1 {
 	max-height: 300px; /*Maximo alto*/
 	width: 50%;
 	height: 60%;
-	padding: 25px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .laboral img {
 	display: block;
@@ -143,10 +145,80 @@ header h1 {
 .cuadros article {
 	display: inline-table;
 	width: 40%; /*Ancho article*/
-	height: 420px;
+	height: 440px;
 	margin-left: 5%;/*Magen izquierda*/
 	margin-bottom: 10px; /*Margen inferior*/
 	margin-top: 10px; /*Margen superior*/
 	background-color: #C8C8C8;
 	border-radius: 10px;
+}
+footer {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	background-color: #C0C0C0;
+	border-radius: 15px;
+	height: 60px; 
+	text-align: center;
+
+}
+footer ul {
+	display: inline-block;
+	margin-top: 15px;
+}
+footer ul li {
+	display: inline-block;
+}
+footer ul li a {
+	text-decoration: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+	.cuadros article {
+		display: block;
+		width: 80%;
+	}
+	/*Menu*/
+	ul.top-menu li:not(:first-child) {display: none;} /*esconde los li del menu original menos el primero*/
+	ul.top-menu li.icon {/*hacemos que el boton aparezca y lo enviamos a la derecha*/
+	    float: left;
+	    display: inline-block;
+	    }
+	ul.top-menu.responsive{ /*cuando se agregue la clase responsive al menu, si posicionamiento será relativo*/
+	    position: relative;
+	    }
+
+	ul.top-menu.responsive li {/*cuando se agregue la clase responsive al menu los  li ya no flotaran encaso de hacerlo y se mostraran en linea*/
+	    float: none;
+	    display: inline;
+
+
+	}
+	ul.top-menu.responsive li.icon { /*modificamos la ubicacion del boton a la derecha  superior*/
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+	ul.top-menu.responsive li a{ /* Hacemos que los enlaces <a> se muestren en bloque y se alineen a la izquierda*/
+	    display: block;
+	    text-align: center;
+    }	
+}
+    
+@media only screen and (max-width: 320px) {
+	.cuadros article {
+		display: block;
+		width: 80%;
+	}
+	.menu {
+		display: none;
+	}
+	h1 {
+		display: none;
+	}
+	.diseno img {
+		float: left;
+		margin-left: 100px;
+	}
 }
