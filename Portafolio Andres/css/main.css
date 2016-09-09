@@ -172,12 +172,21 @@ footer ul li a {
 	text-decoration: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
+	.top-menu {
+		display: none;
+	}
+	h1 {
+		font-size: 25px;
+	}
 }
 @media only screen and (min-width: 321px) and (max-width: 767px) {
+	
 	.cuadros article {
 		display: block;
 		width: 80%;
+	}
+	h1 {
+		font-size: 17px;
 	}
 	/*Menu*/
 	ul.top-menu li:not(:first-child) {display: none;} /*esconde los li del menu original menos el primero*/
@@ -192,7 +201,7 @@ footer ul li a {
 	ul.top-menu.responsive li {/*cuando se agregue la clase responsive al menu los  li ya no flotaran encaso de hacerlo y se mostraran en linea*/
 	    float: none;
 	    display: inline;
-
+		margin: auto;
 
 	}
 	ul.top-menu.responsive li.icon { /*modificamos la ubicacion del boton a la derecha  superior*/
